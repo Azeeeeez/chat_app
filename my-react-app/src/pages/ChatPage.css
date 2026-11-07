@@ -1,0 +1,22 @@
+.chat-shell {
+  height: 100%;
+  display: flex;
+}
+
+@media (max-width: 760px) {
+  .chat-shell > * {
+    width: 100%;
+  }
+
+  .chat-shell .chat-window {
+    display: none;
+  }
+
+  .chat-shell--chat-active .sidebar {
+    display: none;
+  }
+
+  .chat-shell--chat-active .chat-window {
+    display: flex;
+  }
+}
